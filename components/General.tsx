@@ -35,7 +35,7 @@ function General() {
           />
         </div>
         <div className="flex flex-col gap-y-3">
-          <label>Next Term begins on ...., 2025</label>
+          <label>Next Term begins on ......., 2026</label>
           <input
             className="p-1"
             placeholder="School fees for 1st Term: ₦ (Term-ly) 45,000"
