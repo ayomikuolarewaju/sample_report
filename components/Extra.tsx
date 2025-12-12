@@ -4,8 +4,8 @@ function Extra() {
   const [choice, setChoice] = useState("");
 
   return (
-    <div className="text-xs border-black border lg:w-[1000px] w-[500px] flex items-start justify-between mx-auto overflow-hidden">
-      <div>
+    <div className="text-xs border-black border m-1 lg:w-[1000px] w-[500px] lg:flex items-start justify-between mx-auto overflow-hidden p-2 gap-2">
+      <div className="mb-2">
         <div className="bg-blue-300 text-center p-3 mb-2 text-xs">
           <h2>EXTRACURRICULAR ACTIVITIES</h2>
         </div>

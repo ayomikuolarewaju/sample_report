@@ -95,64 +95,77 @@ function Subject() {
   const average = subjects.length ? grandTotal / subjects.length : 0;
 
   return (
-    <div className=" border-black border lg:w-[1000px] w-[500px] text-xs flex items-start justify-start mx-auto overflow-hidden">
+    <div className="border border-black m-1 lg:w-[1000px] w-[500px] text-xs lg:flex items-start justify-start mx-auto overflow-hidden p-2 scroll-m-2">
       <form>
-        <div className="lg:flex w-[1000px] flex-col justify-start items-start p-2 gap-2 text-xs">
+        <div className="lg:flex lg:w-[1000px] w-[500ox] flex-col justify-start items-start p-2 gap-2 text-xs">
           {subjects.map((subject, index) => (
             <div
               key={index}
-              className="border p-4 mb-4 rounded bg-gray-50 flex gap-x-2 text-xs h-[100px]"
+              className=" p-4 mb-4 rounded bg-gray-50 lg:flex gap-x-2 text-xs "
             >
-              <h2 className="font-bold bg-blue-300 p-5 h-5 justify-center items-center flex capitalize text-xs">
+              <h2 className="font-bold bg-blue-300 p-5 h-5 justify-center items-center flex capitalize text-xs m-1">
                 {subject.name}
               </h2>
 
-              <div className="flex gap-3 flex-wrap w-[300px] text-xs">
-                <input
-                  type="number"
-                  placeholder="Exam 60%"
-                  className="border p-5 w-20 h-5 "
-                  value={subject.exam}
-                  onChange={(e) =>
-                    setSubjects((prev) => {
-                      const copy = [...prev];
-                      copy[index].exam = Number(e.target.value);
-                      return copy;
-                    })
-                  }
-                />
-
-                <input
-                  type="number"
-                  placeholder="1st CA 20%"
-                  className="border p-5 w-20 h-5"
-                  value={subject.ca1}
-                  onChange={(e) =>
-                    setSubjects((prev) => {
-                      const copy = [...prev];
-                      copy[index].ca1 = Number(e.target.value);
-                      return copy;
-                    })
-                  }
-                />
-
-                <input
-                  type="number"
-                  placeholder="2nd CA 20%"
-                  className="border p-5 w-20 h-5"
-                  value={subject.ca2}
-                  onChange={(e) =>
-                    setSubjects((prev) => {
-                      const copy = [...prev];
-                      copy[index].ca2 = Number(e.target.value);
-                      return copy;
-                    })
-                  }
-                />
+              <div className="lg:flex gap-3 flex-wrap  text-xs">
+                <div className="m-1 lg:flex-col flex gap-4">
+                  <label className="text-xs w-[200px] bg-blue-300 lg:w-20 lg:h-[50px] text-black font-bold flex justify-center items-center">
+                    Exam 60%
+                  </label>
+                  <input
+                    type="number"
+                    placeholder="Exam 60%"
+                    className="border p-5  w-20 h-5 "
+                    value={subject.exam}
+                    onChange={(e) =>
+                      setSubjects((prev) => {
+                        const copy = [...prev];
+                        copy[index].exam = Number(e.target.value);
+                        return copy;
+                      })
+                    }
+                  />
+                </div>
+                <div className="m-1 lg:flex-col flex gap-4">
+                  <label className="text-xs w-[200px] bg-blue-300 lg:w-20 lg:h-[50px] text-black font-bold flex justify-center items-center">
+                    1st CA 20%
+                  </label>
+                  <input
+                    type="number"
+                    placeholder="1st CA 20%"
+                    className="border p-5 w-20 h-5"
+                    value={subject.ca1}
+                    onChange={(e) =>
+                      setSubjects((prev) => {
+                        const copy = [...prev];
+                        copy[index].ca1 = Number(e.target.value);
+                        return copy;
+                      })
+                    }
+                  />
+                </div>
+                <div className="m-1 lg:flex-col flex gap-4">
+                  <label className="text-xs w-[200px] bg-blue-300 lg:w-20 lg:h-[50px] text-black font-bold flex justify-center items-center">
+                    2nd CA 20%
+                  </label>
+                  <input
+                    type="number"
+                    placeholder="2nd CA 20%"
+                    className="border p-5 w-20  h-5"
+                    value={subject.ca2}
+                    onChange={(e) =>
+                      setSubjects((prev) => {
+                        const copy = [...prev];
+                        copy[index].ca2 = Number(e.target.value);
+                        return copy;
+                      })
+                    }
+                  />
+                </div>
               </div>
               <div className="flex-1 flex gap-3 flex-wrap w-[600px] text-xs">
-                <div className="p-x-3 h-[100px] flex lg:flex-col justify-start items-center text-xs">
-                  <label className="lg:w-20 w-[150px] bg-blue-300 h-[50px] text-center text-xs text-black font-bold flex justify-center items-center">
+                <div className="p-x-3 flex lg:flex-col justify-start items-center text-xs">
+                  <label className="lg:w-20 w-[200px] bg-blue-300 h-[50px] text-center text-xs text-black font-bold flex justify-center items-center p-2">
                     Total
                   </label>
                   <input
@@ -164,8 +177,8 @@ function Subject() {
                   />
                 </div>
 
-                <div className="p-x-3 h-[100px] flex lg:flex-col justify-start items-center ">
-                  <label className="lg:w-20 w-[150px] bg-blue-300 h-[50px] text-center text-xs text-black font-bold flex justify-center items-center">
+                <div className="p-x-3 flex lg:flex-col justify-start items-center ">
+                  <label className="lg:w-20 w-[200px] bg-blue-300 h-[50px] text-center text-xs text-black font-bold flex justify-center items-center p-2">
                     Grade
                   </label>
                   <input
@@ -177,8 +190,8 @@ function Subject() {
                   />
                 </div>
 
-                <div className="p-x-3 h-[100px] flex lg:flex-col justify-start items-center ">
-                  <label className="lg:w-20 w-[150px] bg-blue-300 h-[50px] text-center text-xs text-black font-bold flex justify-center items-center">
+                <div className="p-x-3 flex lg:flex-col justify-start items-center ">
+                  <label className="lg:w-20 w-[200px] bg-blue-300 h-[50px] text-center text-xs text-black font-bold flex justify-center items-center p-2">
                     Point
                   </label>
                   <input
@@ -190,8 +203,8 @@ function Subject() {
                   />
                 </div>
 
-                <div className="p-x-3 h-[100px] flex lg:flex-col justify-start items-center ">
-                  <label className="lg:w-20 w-[150px] bg-blue-300 h-[50px] text-center text-xs text-black font-bold flex justify-center items-center">
+                <div className="p-x-3  flex lg:flex-col justify-start items-center ">
+                  <label className="lg:w-20 w-[200px] bg-blue-300 h-[50px] text-center text-xs text-black font-bold flex justify-center items-center">
                     Remark
                   </label>
                   <input
@@ -203,9 +216,9 @@ function Subject() {
                   />
                 </div>
 
-                <div className="p-x-3 h-[100px] flex lg:flex-col justify-start items-center ">
+                <div className="p-x-3 flex lg:flex-col justify-start items-center ">
                   <label
-                    className="lg:w-20 w-[150px] bg-blue-300 h-[50px] text-center text-xs text-black font-bold flex justify-center items-center"
+                    className="lg:w-20 w-[200px] bg-blue-300 h-[50px] text-center text-xs text-black font-bold flex justify-center items-center"
                     htmlFor="attendance"
                   >
                     Action

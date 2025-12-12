@@ -3,7 +3,7 @@ import logo from "@/public/logo.png";
 
 function Head() {
   return (
-    <div className=" border-black border lg:w-[1000px] w-[500px] lg:h-[100px] lg:flex items-center justify-center lg:justify-around mx-auto text-xs">
+    <div className=" border-black border m-1 lg:w-[1000px] w-[500px] lg:h-[100px] lg:flex items-center justify-center lg:justify-around mx-auto text-xs">
       <div className="text-center flex justify-center items-center">
         <Image src={logo} alt="logo" width={80} height={80} />
       </div>

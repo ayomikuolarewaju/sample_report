@@ -2,7 +2,7 @@ import React from "react";
 
 function Grade() {
   return (
-    <div className=" border-black border lg:w-[1000px] w-[500px] flex items-start justify-between mx-auto overflow-hidden text-xs">
+    <div className=" border-black border lg:w-[1000px] w-[500px] lg:flex items-start justify-between mx-auto overflow-hidden text-xs p-2">
       <div>
         <div className="bg-blue-300 text-center p-3 mb-2 text-xs">
           <h2>GRADING SCALE</h2>
