@@ -1,18 +1,21 @@
 import Image from "next/image";
-import React from "react";
 import logo from "@/public/logo.png";
 
 function Head() {
   return (
-    <div className=" border-black border w-[1000px] h-[150px] flex items-center justify-around mx-auto">
-      <div>
+    <div className=" border-black border lg:w-[1000px] w-[500px] lg:h-[100px] lg:flex items-center justify-center lg:justify-around mx-auto text-xs">
+      <div className="text-center flex justify-center items-center">
         <Image src={logo} alt="logo" width={80} height={80} />
       </div>
       <div className="">
-        <h2 className="text-red-600 font-bold text-4xl">PROTEGE SCHOOLS</h2>
-        <h4 className="text-center">2, Kola Rewire St, Ejigbo, Lagos</h4>
-        <h5 className="text-center">+234 708 903 0732</h5>
-        <p className="text-center  text-blue-400">
+        <h2 className="text-red-600 font-bold text-sm text-center ">
+          PROTEGE SCHOOLS
+        </h2>
+        <h4 className="text-center text-xs">
+          2, Kola Rewire St, Ejigbo, Lagos
+        </h4>
+        <h5 className="text-center text-xs">+234 708 903 0732</h5>
+        <p className="text-center  text-blue-400 text-xs">
           protegeacademyconsult@gmail.com
         </p>
       </div>
