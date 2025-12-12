@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useRef } from "react";
-import html2canvas from "html2canvas";
 import jsPDF from "jspdf";
 import { toPng } from "html-to-image";
 import Extra from "@/components/Extra";
@@ -48,17 +47,22 @@ function Page() {
       const imgWidth = pageWidth;
       const imgHeight = (img.height * imgWidth) / img.width;
 
+      // Add first page
       pdf.addImage(dataUrl, "PNG", 0, 0, imgWidth, imgHeight);
 
-      // Handle multi-page content
-      let heightLeft = imgHeight - pageHeight;
+      // Handle multi-page content - FIXED LOGIC
+      let heightLeft = imgHeight;
       let position = 0;
 
+      // Subtract pageHeight since first page is already added
+      heightLeft -= pageHeight;
+      position -= pageHeight; // Start position for next page
+
       while (heightLeft > 0) {
-        position = heightLeft - imgHeight;
         pdf.addPage();
         pdf.addImage(dataUrl, "PNG", 0, position, imgWidth, imgHeight);
         heightLeft -= pageHeight;
+        position -= pageHeight; // Move position for next page
       }
 
       pdf.save("student_report.pdf");

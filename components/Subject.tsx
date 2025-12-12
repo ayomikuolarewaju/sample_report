@@ -101,15 +101,15 @@ function Subject() {
           {subjects.map((subject, index) => (
             <div
               key={index}
-              className=" p-4 mb-4 rounded bg-gray-50 lg:flex gap-x-2 text-xs "
+              className=" p-4 mb-4 rounded bg-gray-50 lg:flex gap-x-2 text-xs"
             >
               <h2 className="font-bold bg-blue-300 p-5 h-5 justify-center items-center flex capitalize text-xs m-1">
                 {subject.name}
               </h2>
 
-              <div className="lg:flex gap-3 flex-wrap  text-xs">
+              <div className="lg:flex gap-3 flex-wrap w-[350px] text-xs">
                 <div className="m-1 lg:flex-col flex gap-4">
-                  <label className="text-xs w-[200px] bg-blue-300 lg:w-20 lg:h-[50px] text-black font-bold flex justify-center items-center">
+                  <label className="text-xs w-[100px] bg-blue-300 lg:w-20 lg:h-[50px] text-black font-bold flex justify-center items-center">
                     Exam 60%
                   </label>
                   <input
@@ -127,7 +127,7 @@ function Subject() {
                   />
                 </div>
                 <div className="m-1 lg:flex-col flex gap-4">
-                  <label className="text-xs w-[200px] bg-blue-300 lg:w-20 lg:h-[50px] text-black font-bold flex justify-center items-center">
+                  <label className="text-xs w-[100px] bg-blue-300 lg:w-20 lg:h-[50px] text-black font-bold flex justify-center items-center">
                     1st CA 20%
                   </label>
                   <input
@@ -145,7 +145,7 @@ function Subject() {
                   />
                 </div>
                 <div className="m-1 lg:flex-col flex gap-4">
-                  <label className="text-xs w-[200px] bg-blue-300 lg:w-20 lg:h-[50px] text-black font-bold flex justify-center items-center">
+                  <label className="text-xs w-[100px] bg-blue-300 lg:w-20 lg:h-[50px] text-black font-bold flex justify-center items-center">
                     2nd CA 20%
                   </label>
                   <input
@@ -165,7 +165,7 @@ function Subject() {
               </div>
               <div className="flex-1 flex gap-3 flex-wrap w-[600px] text-xs">
                 <div className="p-x-3 flex lg:flex-col justify-start items-center text-xs">
-                  <label className="lg:w-20 w-[200px] bg-blue-300 h-[50px] text-center text-xs text-black font-bold flex justify-center items-center p-2">
+                  <label className="lg:w-20 w-[100px] bg-blue-300 h-[50px] text-center text-xs text-black font-bold flex justify-center items-center p-2">
                     Total
                   </label>
                   <input
@@ -178,7 +178,7 @@ function Subject() {
                 </div>
 
                 <div className="p-x-3 flex lg:flex-col justify-start items-center ">
-                  <label className="lg:w-20 w-[200px] bg-blue-300 h-[50px] text-center text-xs text-black font-bold flex justify-center items-center p-2">
+                  <label className="lg:w-20 w-[100px] bg-blue-300 h-[50px] text-center text-xs text-black font-bold flex justify-center items-center p-2">
                     Grade
                   </label>
                   <input
@@ -191,7 +191,7 @@ function Subject() {
                 </div>
 
                 <div className="p-x-3 flex lg:flex-col justify-start items-center ">
-                  <label className="lg:w-20 w-[200px] bg-blue-300 h-[50px] text-center text-xs text-black font-bold flex justify-center items-center p-2">
+                  <label className="lg:w-20 w-[100px] bg-blue-300 h-[50px] text-center text-xs text-black font-bold flex justify-center items-center p-2">
                     Point
                   </label>
                   <input
@@ -204,7 +204,7 @@ function Subject() {
                 </div>
 
                 <div className="p-x-3  flex lg:flex-col justify-start items-center ">
-                  <label className="lg:w-20 w-[200px] bg-blue-300 h-[50px] text-center text-xs text-black font-bold flex justify-center items-center">
+                  <label className="lg:w-20 w-[100px] bg-blue-300 h-[50px] text-center text-xs text-black font-bold flex justify-center items-center">
                     Remark
                   </label>
                   <input
@@ -218,7 +218,7 @@ function Subject() {
 
                 <div className="p-x-3 flex lg:flex-col justify-start items-center ">
                   <label
-                    className="lg:w-20 w-[200px] bg-blue-300 h-[50px] text-center text-xs text-black font-bold flex justify-center items-center"
+                    className="lg:w-20 w-[100px] bg-blue-300 h-[50px] text-center text-xs text-black font-bold flex justify-center items-center"
                     htmlFor="attendance"
                   >
                     Action

@@ -13,37 +13,75 @@ function Extra() {
           <form>
             <div className="flex">
               <label className="w-[200px] bg-blue-300 h-[50px] text-center text-black font-bold flex justify-center items-center text-xs">
-                Debate Club
+                Spelling Bee
               </label>
               <select
                 title="club"
                 name="choice"
                 className="w-[250px] p-2 text-xs"
-                onChange={(e) => setChoice(e.target.value)}
               >
-                <option value={choice}>Good</option>
-                <option value={choice}>Average</option>
-                <option value={choice}>Excellent</option>
+                <option value="Good">Good</option>
+                <option value="Average">Average</option>
+                <option value="Excellent">Excellent</option>
               </select>
             </div>
             <div className="flex">
               <label className="w-[200px] bg-blue-300 h-[50px] text-center text-black font-bold flex justify-center items-center text-xs">
-                Science Club
+                Table Tennis
               </label>
               <select
                 title="club"
                 name="debate"
                 className="w-[250px] p-2 text-xs"
-                onChange={(e) => setChoice(e.target.value)}
               >
-                <option value={choice}>Good</option>
-                <option value={choice}>Average</option>
-                <option value={choice}>Excellent</option>
+                <option value="Good">Good</option>
+                <option value="Average">Average</option>
+                <option value="Excellent">Excellent</option>
               </select>
             </div>
             <div className="flex">
               <label className="w-[200px] bg-blue-300 h-[50px] text-center text-xs text-black font-bold flex justify-center items-center">
-                Computer Club
+                Drama
+              </label>
+              <select title="club" name="debate" className="w-[250px] p-2">
+                <option value="Good">Good</option>
+                <option value="Average">Average</option>
+                <option value="Excellent">Excellent</option>
+              </select>
+            </div>
+            <div className="flex">
+              <label className="w-[200px] bg-blue-300 h-[50px] text-center text-xs text-black font-bold flex justify-center items-center">
+                Football
+              </label>
+              <select title="club" name="debate" className="w-[250px] p-2">
+                <option value="Good">Good</option>
+                <option value="Average">Average</option>
+                <option value="Excellent">Excellent</option>
+              </select>
+            </div>
+            <div className="flex">
+              <label className="w-[200px] bg-blue-300 h-[50px] text-center text-xs text-black font-bold flex justify-center items-center">
+                Musical Instructment
+              </label>
+              <select title="club" name="debate" className="w-[250px] p-2">
+                <option value="Good">Good</option>
+                <option value="Average">Average</option>
+                <option value="Excellent">Excellent</option>
+              </select>
+            </div>
+            <div className="flex">
+              <label className="w-[200px] bg-blue-300 h-[50px] text-center text-xs text-black font-bold flex justify-center items-center">
+                Mental Math
+              </label>
+              <select title="club" name="debate" className="w-[250px] p-2">
+                <option value="Good">Good</option>
+                <option value="Average">Average</option>
+                <option value="Excellent">Excellent</option>
+              </select>
+            </div>
+            <div className="flex">
+              <label className="w-[200px] bg-blue-300 h-[50px] text-center text-xs text-black font-bold flex justify-center items-center">
+                Singing Skill
               </label>
               <select title="club" name="debate" className="w-[250px] p-2">
                 <option value="first">Good</option>
@@ -53,7 +91,7 @@ function Extra() {
             </div>
             <div className="flex">
               <label className="w-[200px] bg-blue-300 h-[50px] text-center text-xs text-black font-bold flex justify-center items-center">
-                Drama Club
+                Poetry
               </label>
               <select title="club" name="debate" className="w-[250px] p-2">
                 <option value="first">Good</option>
@@ -63,7 +101,7 @@ function Extra() {
             </div>
             <div className="flex">
               <label className="w-[200px] bg-blue-300 h-[50px] text-center text-xs text-black font-bold flex justify-center items-center">
-                Music Club
+                Communication Skills
               </label>
               <select title="club" name="debate" className="w-[250px] p-2">
                 <option value="first">Good</option>
@@ -73,37 +111,7 @@ function Extra() {
             </div>
             <div className="flex">
               <label className="w-[200px] bg-blue-300 h-[50px] text-center text-xs text-black font-bold flex justify-center items-center">
-                Sport Teams
-              </label>
-              <select title="club" name="debate" className="w-[250px] p-2">
-                <option value="first">Good</option>
-                <option value="second">Average</option>
-                <option value="third">Excellent</option>
-              </select>
-            </div>
-            <div className="flex">
-              <label className="w-[200px] bg-blue-300 h-[50px] text-center text-xs text-black font-bold flex justify-center items-center">
-                Art Club
-              </label>
-              <select title="club" name="debate" className="w-[250px] p-2">
-                <option value="first">Good</option>
-                <option value="second">Average</option>
-                <option value="third">Excellent</option>
-              </select>
-            </div>
-            <div className="flex">
-              <label className="w-[200px] bg-blue-300 h-[50px] text-center text-xs text-black font-bold flex justify-center items-center">
-                Library Society
-              </label>
-              <select title="club" name="debate" className="w-[250px] p-2">
-                <option value="first">Good</option>
-                <option value="second">Average</option>
-                <option value="third">Excellent</option>
-              </select>
-            </div>
-            <div className="flex">
-              <label className="w-[200px] bg-blue-300 h-[50px] text-center text-xs text-black font-bold flex justify-center items-center">
-                Environment Club
+                Sciences
               </label>
               <select title="club" name="debate" className="w-[250px] p-2">
                 <option value="first">Good</option>

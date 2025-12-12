@@ -1,6 +1,6 @@
 function Student() {
   return (
-    <div className=" border-black border m-1 lg:w-[1000px] w-[600px] lg:h-[200px] flex items-center justify-start mx-auto text-xs">
+    <div className=" border-black border m-1 lg:w-[1000px] w-[500px] lg:h-[200px] flex items-center justify-start mx-auto text-xs">
       <form>
         <div className="p-x-3 h-[50px] flex justify-start items-center text-xs">
           <label
