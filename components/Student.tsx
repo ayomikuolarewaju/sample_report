@@ -44,9 +44,9 @@ function Student() {
               className="w-[250px] p-2 text-xs uppercase font-bold"
             >
               <option value="kg1">KG1</option>
-              <option value="kg2">KG2</option>
-              <option value="Nursery 1">nursery 1</option>
-              <option value="Nursery 2">nursery 2</option>
+              <option value="kg2">nursery 1</option>
+              <option value="Nursery 1">nursery 2</option>
+              <option value="Nursery 2">kindergarten</option>
               <option value="Pry 1">pry 1</option>
               <option value="Pry 2">pry 2</option>
               <option value="Pry 3">pry 3</option>

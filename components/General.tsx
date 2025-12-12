@@ -9,18 +9,12 @@ function General() {
         </div>
         <div className="flex flex-col gap-3">
           <div className="flex flex-col gap-y-3">
-            <label>Next Term begins on ...., 2025</label>
-            <input
-              className="p-1"
-              placeholder="School fees for 1st Term: ₦ (Term-ly) 45,000"
-            />
+            <label>Next Term begins on</label>
+            <input className="p-1" placeholder="Next Term begins on" />
           </div>
           <div className="flex flex-col gap-y-3">
-            <label>Next Term begins on ...., 2025</label>
-            <input
-              className="p-1"
-              placeholder="School fees for 1st Term: ₦ (Term-ly) 45,000"
-            />
+            <label>School fees</label>
+            <input className="p-1" placeholder="School fees " />
           </div>
         </div>
       </div>
@@ -32,13 +26,6 @@ function General() {
           <textarea
             className="p-3 text-xs lowercase"
             placeholder="Enter CLASS TEACHER'S COMMENTS"
-          />
-        </div>
-        <div className="flex flex-col gap-y-3">
-          <label>Next Term begins on ......., 2026</label>
-          <input
-            className="p-1"
-            placeholder="School fees for 1st Term: ₦ (Term-ly) 45,000"
           />
         </div>
       </div>
